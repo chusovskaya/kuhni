@@ -1,4 +1,4 @@
-import hero from '../content/hero.json'
+import hero from "../content/hero.json";
 
 const Hero = () => (
   <section
@@ -8,7 +8,7 @@ const Hero = () => (
     {/* Background image with overlay */}
     <div className="absolute inset-0 bg-[#1a1a1a]">
       <img
-        src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1600&q=80"
+        src="/hero.jpg"
         alt="Кухня"
         className="w-full h-full object-cover opacity-40"
       />
@@ -32,10 +32,12 @@ const Hero = () => (
 
     {/* Scroll hint */}
     <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2">
-      <span className="text-white/50 text-xs tracking-widest uppercase">Листать</span>
+      <span className="text-white/50 text-xs tracking-widest uppercase">
+        Листать
+      </span>
       <div className="w-px h-8 bg-white/30 animate-pulse" />
     </div>
   </section>
-)
+);
 
-export default Hero
+export default Hero;
