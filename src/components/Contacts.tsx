@@ -32,20 +32,36 @@ const Contacts = () => (
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <a
-          href={`tel:${contacts.phone.replace(/\s|\(|\)|-/g, '')}`}
-          className="group flex items-start gap-4 p-6 rounded-2xl border border-[#e5e0d8] hover:border-[#c8a96e] hover:shadow-md transition-all duration-200 bg-white"
-        >
-          <div className="text-[#c8a96e] mt-0.5">
-            <PhoneIcon />
-          </div>
-          <div>
-            <div className="text-xs text-[#6b6b6b] uppercase tracking-wide mb-1">Телефон</div>
-            <div className="font-semibold text-[#1a1a1a] group-hover:text-[#c8a96e] transition-colors">
-              {contacts.phone}
+        <div className="flex flex-col gap-3">
+          <a
+            href={`tel:${contacts.phone.replace(/\s|\(|\)|-/g, '')}`}
+            className="group flex items-start gap-4 p-6 rounded-2xl border border-[#e5e0d8] hover:border-[#c8a96e] hover:shadow-md transition-all duration-200 bg-white"
+          >
+            <div className="text-[#c8a96e] mt-0.5">
+              <PhoneIcon />
             </div>
-          </div>
-        </a>
+            <div>
+              <div className="text-xs text-[#6b6b6b] uppercase tracking-wide mb-1">Телефон</div>
+              <div className="font-semibold text-[#1a1a1a] group-hover:text-[#c8a96e] transition-colors">
+                {contacts.phone}
+              </div>
+            </div>
+          </a>
+          <a
+            href={`tel:${contacts.phone2.replace(/\s|\(|\)|-/g, '')}`}
+            className="group flex items-start gap-4 p-6 rounded-2xl border border-[#e5e0d8] hover:border-[#c8a96e] hover:shadow-md transition-all duration-200 bg-white"
+          >
+            <div className="text-[#c8a96e] mt-0.5">
+              <PhoneIcon />
+            </div>
+            <div>
+              <div className="text-xs text-[#6b6b6b] uppercase tracking-wide mb-1">Телефон</div>
+              <div className="font-semibold text-[#1a1a1a] group-hover:text-[#c8a96e] transition-colors">
+                {contacts.phone2}
+              </div>
+            </div>
+          </a>
+        </div>
 
         <a
           href={`mailto:${contacts.email}`}
